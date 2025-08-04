@@ -1,10 +1,11 @@
-package Classes;
+
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
+import java.util.function.Supplier;
 
 public class One_Pre {
     public static void main(String[] args) {
@@ -21,7 +22,9 @@ public class One_Pre {
                 System.out.println(num);
             }
         };
+        c.accept(numbers);
 
-        
-    }
+        Supplier<Double> s = () -> Math.random();
+        System.out.println("random"+ s.get());
+       }
 }
