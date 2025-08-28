@@ -1,7 +1,7 @@
-// @FunctionalInterface
+@FunctionalInterface
 interface Dao{
     void login();
-    void logout();
+    // void logout();
 } 
 public class Daoimpl implements Dao{
     public void login(){

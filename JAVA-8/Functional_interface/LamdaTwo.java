@@ -1,5 +1,7 @@
 package Classes;
 
+import java.util.function.Predicate;
+
 interface Two{
     int add(int a , int b);
 }
@@ -10,7 +12,7 @@ public class LamdaTwo {
         // Two obj2 = () -> System.out.println("lamda function successfully executed");
         int sum1 = obj1.add(2, 4);
         System.out.println(sum1);
-        // Predicate<Integer> obj2 = sum1 -> sum1>4;
-        // System.out.println(obj2);
+        Predicate<Integer> obj2 = (sum2) -> sum2>4;
+        System.out.println(obj2.test(sum1));
     }
 }
